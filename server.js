@@ -3,7 +3,7 @@ let file = fs.readFileSync("/home/container/NeosVR/Config/Config.json");
 const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const db = low(new FileSync("/home/container/Config/Users.json"));
-db.defaults({ Users: ["U-RoxyBoxxy"] }).write();
+db.defaults({ Users: ["U-ChangeMe"] }).write();
 //let Users = JSON.parse(fs.readFileSync(`Config/Users.json`))
 let config = JSON.parse(file);
 const Neos = require("@bombitmanbomb/neosjs");
