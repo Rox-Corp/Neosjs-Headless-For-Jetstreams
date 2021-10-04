@@ -288,7 +288,7 @@ NeosVR.on("ready", () => {
   });
 });
 neos.on("login", (obj) => {
-  console.log(obj.CurrentUser, obj.CurrentSession); // Log the current user and Session
+ console.log('Nodejs Layer Logged in.')
 });
 neos.on("friendAdded", (friend) => {
   if (friend.FriendStatus == "Requested") {
